@@ -142,3 +142,5 @@ Found a bug? Open an issue.
 ---
 
 *Replace placeholders (e.g., YOUR_USERNAME/YOUR_REPO) with your project details.*
+
+# bilgilerinize doldurmaniz gerekiyor. 🚫🚫🚫
