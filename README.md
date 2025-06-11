@@ -1,4 +1,4 @@
-<div align="center">
+m<div align="center">
   <img src="https://img.shields.io/github/languages/count/keyvanarasteh/Project?style=flat-square&color=blueviolet" alt="Language Count">
   <img src="https://img.shields.io/github/languages/top/keyvanarasteh/Project?style=flat-square&color=1e90ff" alt="Top Language">
   <img src="https://img.shields.io/github/last-commit/keyvanarasteh/Project?style=flat-square&color=ff69b4" alt="Last Commit">
@@ -143,4 +143,4 @@ Found a bug? Open an issue.
 
 *Replace placeholders (e.g., YOUR_USERNAME/YOUR_REPO) with your project details.*
 
-# bilgilerinize doldurmaniz gerekiyor. 🚫🚫🚫
+# bilgilerinizi doldurmaniz gerekiyor. 🚫🚫🚫
