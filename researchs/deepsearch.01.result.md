@@ -20,5 +20,22 @@ ve etkisiz hale getirmeyi amaçlar. Wireshark, "paket yakalama ve protokol anali
 derinlemesine nüfuz etmek için gerekli ayrıntılı görünürlüğü sağlar ve bu proaktif yaklaşımın kritik bir kolaylaştırıcısıdır. 
 Güvenlik profesyonellerinin "ağlarını anlamalarına, sorun gidermelerine ve güvenli hale getirmelerine" olanak tanır. Bu süreç, potansiyel
 güvenlik tehditlerini belirlemek, ağ sorunlarını gidermek ve siber suç soruşturmaları için kanıt toplamak amacıyla paketlerin başlıkları, 
-yükleri ve kuyrukları dahil olmak üzere içeriklerinin incelenmesini içerir.   
+yükleri ve kuyrukları dahil olmak üzere içeriklerinin incelenmesini içerir.
+
+## 2025'teki Dinamik Tehdit Ortamına Genel Bakış
+2025 yılı, siber güvenlik alanında önemli dönüşümlerin yaşandığı bir dönem olarak 
+öne çıkmaktadır. Tehdit ortamı, sürekli gelişen saldırı teknikleri ve genişleyen saldırı yüzeyleriyle karakterizedir.
+
+  **YZ Destekli Saldırılar:** Siber suçlular, gelişmiş kimlik avı şemaları, deepfake dolandırıcılıkları
+  ve adaptif kötü amaçlı yazılımlar dahil olmak üzere sofistike saldırılar geliştirmek için YZ'den giderek
+  daha fazla yararlanmaktadır, bu da tespit ve azaltmayı daha zor hale getirmektedir. YZ, ikna edici kimlik
+  avı ve deepfake'ler geliştirmek için bir "güç çarpanı" görevi görmektedir. Bu durum, hem saldırıların hem
+  de savunmaların karmaşıklığında hızlı bir artışa işaret etmektedir. YZ'nin hem saldırganlar hem de savunmacılar
+  tarafından kullanılması, dinamik ve hızla değişen bir ortam yaratmaktadır. Kuruluşların YZ destekli güvenlik 
+  çözümlerini benimsememesi, YZ ile güçlendirilmiş tehdit aktörlerine karşı önemli bir dezavantaj yaratacaktır. 
+  Bu durum, güvenlik profesyonellerinin YZ'nin saldırganlar tarafından nasıl kullanıldığını ve YZ destekli
+  analitiklerle buna nasıl karşı konulacağını anlamalarını zorunlu kılmaktadır. Ayrıca, tüm çalışanlar için kapsamlı 
+  YZ eğitimi ve politika geliştirme ihtiyacını da beraberinde getirmektedir. 
+  
+
 
