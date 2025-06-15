@@ -21,10 +21,13 @@ Bu aşama, projenin başlangıç hedeflerinin başarıyla tamamlandığı ilk te
   - Projenin amacını, hedeflerini, kurulum adımlarını ve ilk bulguları içeren kapsamlı bir README.md dosyasının hazırlanması.
   - Tespit edilen IP/port/protokol bilgilerini özetleyen detaylı bir **Oyun Ağ Bağlantıları Analiz Tablosu**nun oluşturulması ve README.md'ye entegrasyonu.
   - İlgili araştırma notları için researchs/ klasörü altında ilk taslak Markdown dosyalarının oluşturulması (örn. csgo_network_analysis.md, wireshark_filters.md).
-
-
+### Elde Edilen Çıktılar::
 ```
+Temel oyun ağ bağlantı bilgilerini içeren ilk analiz raporu ve dokümantasyon.
 
+Etkili ve çalışır durumda Wireshark yakalama/görüntüleme filtre setleri.
+
+GitHub üzerinde, kolayca klonlanabilir ve anlaşılır bir yapıya sahip proje deposu.
 
 ```
 
