@@ -37,5 +37,23 @@ yükleri ve kuyrukları dahil olmak üzere içeriklerinin incelenmesini içerir.
   analitiklerle buna nasıl karşı konulacağını anlamalarını zorunlu kılmaktadır. Ayrıca, tüm çalışanlar için kapsamlı 
   YZ eğitimi ve politika geliştirme ihtiyacını da beraberinde getirmektedir. 
   
+  **Genişleyen Saldırı Yüzeyi:** oklu bulut ortamlarının, 2025 yılına kadar 75 milyar IoT cihazının ve hibrit çalışma
+  modellerinin yaygınlaşması, yeni güvenlik açıkları yaratmaktadır. Ortalama cihaz riskinde 2025 yılında yıllık %15 artış yaşanmış,
+  yönlendiriciler kritik güvenlik açıklarının %50'sinden fazlasını oluşturmuştur. Bağlı cihazların hacmi ve çeşitliliği,
+  güvenliğin artık yalnızca çevre savunmalarına veya uç nokta aracılarının sağladığı korumaya dayanamayacağı anlamına gelmektedir
+  . Wireshark'ın sağladığı derin ağ görünürlüğü, bu genişleyen ve genellikle daha az izlenen ortamlarda yanal hareketin,
+  anormal iç iletişimlerin ve geleneksel kontrolleri atlayan tehditlerin tespit edilmesi için hayati önem taşımaktadır. 
+  "Oyuncu Avı Projesi", proaktif, iç savunma gerekliliğini doğrudan ele almaktadır. 
+
+  **Fidye Yazılımı Evrimi:** idye yazılımı, saldırganların birincil hedef olarak veri sızdırmaya odaklanmasıyla baskın bir tehdit
+  olmaya devam etmektedir, bu da fidye ödenmeden bile kurtarmayı zorlaştırmaktadır. Fidye yazılımı saldırısından kurtulmanın ortalama maliyeti,
+  fidye miktarı hariç, yaklaşık 2.73 milyon dolardır.   
+
+  **Ağ Etkinliği İzlemeye Geçiş:** Uç nokta uyarılarına reaktif olarak yanıt vermek yerine, ağ etkinliğini izlemeye ve uç cihaz günlüklerini
+  incelemeye yönelik artan bir odaklanma bulunmaktadır. Bu proaktif duruş, diğer çözümlerin gözden kaçırabileceği şüpheli davranışları,
+  kötü amaçlı Komuta ve Kontrol (C2) işlevlerini ve veri transferi anormalliklerini belirlemeyi amaçlamaktadır.   
+
+
+
 
 
