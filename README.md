@@ -7,11 +7,10 @@ m<div align="center">
   <img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen?style=flat-square" alt="Contributions">
 </div>
 
-# Project Name
-*Proje Adı*
+# Oyuncu Avı Projesi
+Bu proje, çevrimiçi oyunların ağ trafiğini analiz etmeyi ve oyunlara bağlanırken kullanılan IP adreslerini, sunucuları ve portları tespit etmeyi amaçlamaktadır. Popüler oyunlar olan CS:GO, Valorant, PUBG gibi oyunlar örnek alınarak, bu oyunların sunucularıyla iletişim kurarken hangi IP adreslerine ve portlara bağlandığı araştırılacaktır. Wireshark kullanılarak oyun trafiği yakalanacak ve bu trafiği analiz etmek için gerekli filtreler oluşturulacaktır.
 
-A brief, engaging description of your project.  
-*Projenizin kısa ve ilgi çekici bir açıklaması.*
+Proje, oyuncu ve oyun sunucusu arasındaki ağ bağlantılarını detaylı bir şekilde inceleyerek, ağ güvenliği ve olası sızma testlerine yönelik önemli bilgiler sağlamayı hedefler.
 
 ---
 
