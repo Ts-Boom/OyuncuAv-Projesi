@@ -61,6 +61,14 @@ güvenlik anormalliklerinin tespitini içerecektir.
 5. **DNS Spoofing Zafiyet İncelemesi:**  Oyunların DNS çözümleme süreçlerini ve potansiyel DNS spoofing zafiyetlerini (örn. oyun istemcisinin veya sunucusunun DNS kayıtlarına güvenip güvenmediği) araştırmak. Bu alanda, Python ile basit DNS spoofing senaryolarının simülasyonu ve olası etkilerinin analizi.
 6. **Potansiyel Teknolojiler:** Python, Coğrafi Konum API'leri/Veritabanları, Trafik Analizi Algoritmaları, Makine Öğrenimi (Anormal Tespit için temel düzeyde).
 
+## 4.3. V2.0 - Etkileşimli Araç ve Genişletilebilir Platform (Uzun Vadeli Hedef):
+Bu uzun vadeli hedef, projenin sadece bir araştırma çıktıları koleksiyonu olmaktan öteye geçerek, 
+kullanıcıların kendi analizlerini yapabileceği etkileşimli bir araç veya modüler bir analiz platformuna dönüşmesini kapsamaktadır.
+
+### Hedefler:
+  -**Basit Web Arayüzü (Web UI)**: Kullanıcıların .pcap dosyalarını yükleyebileceği, temel analiz sonuçlarını ve görselleştirmeleri doğrudan tarayıcı üzerinden görüntüleyebileceği, kullanıcı dostu basit bir web arayüzü geliştirmek (örn. Flask veya Django frameworkleri ile).
+  -Dinamik Oyun ve Kural Ekleme: Kullanıcıların veya geliştiricilerin, yeni oyunları veya özel analiz kurallarını kolayca platforma ekleyebileceği modüler ve genişletilebilir bir mimari oluşturmak.
+  
 ```python
 from flask import Flask, render_template
 
