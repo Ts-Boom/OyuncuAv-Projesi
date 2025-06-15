@@ -16,14 +16,11 @@ Proje, oyuncu ve oyun sunucusu arasındaki ağ bağlantılarını detaylı bir �
 
 ## Features / *Özellikler*
 
-- **Proje Amacı:** Bu proje, popüler çevrimiçi oyunların ağ bağlantılarını analiz etmek için Wireshark kullanır. Hedef, oyunlara bağlanıldığında kullanılan IP adreslerini, sunucuları ve portları tespit etmektir.  
-- **Feature 2:** Another cool thing it does.  
-  *Özellik 2: Yaptığı başka bir harika şey.*
-- **Feature 3:** One more for good measure.  
-  *Özellik 3: Ve bir tane daha.*
-- Add more as they develop.  
-  *Geliştikçe daha fazla ekleyin.*
-
+- **Ağ Trafiği Analizi:** Bu proje, popüler çevrimiçi oyunların ağ trafiğini detaylı bir şekilde analiz etmenizi sağlar. Wireshark kullanarak, oyunlara bağlanırken kullanılan IP adreslerini, sunucuları ve portları tespit edebilirsiniz.
+- **Gerçek Zamanlı İzleme:** Oyun oynarken gerçek zamanlı olarak ağ trafiğini izleyebilir, oyun sunucusuyla bağlantı kurulan IP'leri ve portları anında tespit edebilirsiniz.
+- **Özelleştirilmiş Filtreleme:** Wireshark’ta oyun trafiğini izlemek için özel Capture Filters ve Display Filters oluşturma yeteneği sunar. Bu sayede yalnızca oyun trafiğine odaklanabilir, gereksiz verilerden arındırabilirsiniz.
+- **Ağ Güvenliği İçin Uygulama:** Bu proje, çevrimiçi oyunlardaki ağ güvenliğini test etmenizi sağlar. Oyun sunucusuna ve IP bağlantılarına dair derinlemesine analiz yaparak potansiyel güvenlik açıklarını belirleyebilirsiniz.
+  
 ---
 
 ## Team / *Ekip*
