@@ -31,22 +31,21 @@ GitHub üzerinde, kolayca klonlanabilir ve anlaşılır bir yapıya sahip proje 
 
 ```
 
-### DHCP Manipülasyon Betiği
-Bu betik, sahte DHCP teklifleriyle istemcilere yanlış bir DNS sunucusu atar (DDSpoof benzeri).
+## 4. Gelecek Kilometre Taşları
+Projenin uzun vadeli potansiyelini gerçekleştirmek için planlanan gelecek aşamalar ve özellikler aşağıda listelenmiştir. 
+Her bir aşama, projenin kabiliyetlerini ve değerini artırmayı hedeflemektedir.
 
-1. Scapy ile DHCP spoofing betiği:
+### 4.1. V1.1 - Otomatik Veri İşleme ve Görselleştirme (Kısa Vadeli Hedef)
+Bu aşama, manuel analiz süreçlerini otomatize etmeyi ve elde edilen ağ verilerini daha anlaşılır, 
+görsel formatlarda sunmayı amaçlamaktadır.
 
-```python
-from scapy.all import *
+### Hedefler:
+   - Otomatik Pcap Analizi: Yakalanan .pcap dosyalarını Python kullanarak (örn. scapy, pyshark) otomatik olarak ayrıştıracak ve işleyecek scriptler geliştirmek.
+   - Belirli portlardan geçen toplam paket sayısı ve veri hacmi istatistikleri.
+   - En sık iletişim kurulan kaynak/hedef IP adresleri ve bunların bant genişliği kullanımları.
+   - Paket boyutu dağılımlarının ve akış sürelerinin analizi.
+#### Veri Görselleştirme Modülü: Analiz edilen verileri (trafik yoğunluğu, en aktif sunucular, port kullanım dağılımları vb.) dinamik ve statik grafikler (çubuk grafikler, pasta grafikleri, çizgi grafikler, ısı haritaları) aracılığıyla görselleştirmek için Python kütüphaneleri (matplotlib, seaborn, plotly) kullanmak.
 
-def dhcp_spoof(packet):
-    if packet.haslayer(DHCP) and packet[DHCP].options[0][1] == 1:  # Keşif (Discover)
-        fake_dns = "192.168.1.100"
-        # Sahte DHCP yanıtı oluşturma (detaylı paket yapılandırması gerekir)
-        # send(dhcp_offer)
-
-sniff(filter="udp and (port 67 or 68)", prn=dhcp_spoof)
-```
 
 ### Sahte Web Sunucusu
 Kimlik avı veya sahte içerik sunmak için bir web sunucusu oluşturun.
