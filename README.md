@@ -16,8 +16,7 @@ Proje, oyuncu ve oyun sunucusu arasındaki ağ bağlantılarını detaylı bir �
 
 ## Features / *Özellikler*
 
-- **Feature 1:** Description of the feature.  
-  *Özellik 1: Özelliğin açıklaması.*
+- **Proje Amacı:** Bu proje, popüler çevrimiçi oyunların ağ bağlantılarını analiz etmek için Wireshark kullanır. Hedef, oyunlara bağlanıldığında kullanılan IP adreslerini, sunucuları ve portları tespit etmektir.  
 - **Feature 2:** Another cool thing it does.  
   *Özellik 2: Yaptığı başka bir harika şey.*
 - **Feature 3:** One more for good measure.  
@@ -29,14 +28,11 @@ Proje, oyuncu ve oyun sunucusu arasındaki ağ bağlantılarını detaylı bir �
 
 ## Team / *Ekip*
 
-- **219*****031** - Name Surname: *Role or Contribution*  
-  *Ad Soyad: Rolü veya Katkısı*
-- **Another Member** - Name Surname: *Role or Contribution*  
-  *Ad Soyad: Rolü veya Katkısı*
-- Add more members as needed.  
-  *Gerektiğinde daha fazla üye ekleyin.*
+- **2420191020** - Taha SAYIN: Proje Yöneticisi
 
+  
 ---
+
 
 ## Roadmap / *Yol Haritası*
 
