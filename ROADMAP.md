@@ -45,7 +45,8 @@ görsel formatlarda sunmayı amaçlamaktadır.
    - En sık iletişim kurulan kaynak/hedef IP adresleri ve bunların bant genişliği kullanımları.
    - Paket boyutu dağılımlarının ve akış sürelerinin analizi.
 
-### Veri Görselleştirme Modülü: Analiz edilen verileri (trafik yoğunluğu, en aktif sunucular, port kullanım dağılımları vb.) dinamik ve statik grafikler (çubuk grafikler, pasta grafikleri, çizgi grafikler, ısı haritaları) aracılığıyla görselleştirmek için Python kütüphaneleri (matplotlib, seaborn, plotly) kullanmak.
+### Veri Görselleştirme Modülü:
+Analiz edilen verileri (trafik yoğunluğu, en aktif sunucular, port kullanım dağılımları vb.) dinamik ve statik grafikler (çubuk grafikler, pasta grafikleri, çizgi grafikler, ısı haritaları) aracılığıyla görselleştirmek için Python kütüphaneleri (matplotlib, seaborn, plotly) kullanmak.
 
 
 ### Sahte Web Sunucusu
