@@ -72,10 +72,18 @@ bir tehdit avcılığı stratejisinin güçlü, ayrıntılı bir bileşeni olara
 
 ### Tablo 1: 2025 İçin En İyi 10 Wireshark Oyuncu Avcılığı Tekniği/Eğilimi (Özet)
 
-| Başlık 1 | Başlık 2 | Başlık 3 | Başlık 4 | 
+| Teknik/Eğilim Adı | Kısa Açıklama | Birincil Wireshark Rolü | Oyuncu Avcılığı İçin Temel Fayda | 
 |----------|----------|----------|----------|
-| Hücre 1.1| Hücre 1.2| Hücre 1.3| Hücre 1.4|
+| 1. YZ/ML Destekli Ağ Anomali Tespiti| Ağ davranışındaki sapmaları tespit etmek için gelişmiş ML modellerini kullanma| Veri yakalama, anomali doğrulama, model besleme.| Bilinmeyen tehditleri ve sıfırıncı gün saldırılarını proaktif olarak belirleme|
+| 2. Gelişmiş Kullanıcı ve Varlık Davranış Analitiği (UEBA)| Kullanıcı ve varlık davranışındaki anormallikleri belirlemek için YZ/ML kullanma.| Davranışsal veri sağlama, şüpheli aktiviteyi derinlemesine inceleme.| iç tehditleri, tehlikeye atılmış hesapları ve riskli kullanıcı davranışlarını tespit etme.
+|
 | Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
-
+| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
+| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
+| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
+| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
+| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
+| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
+| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
 
 
