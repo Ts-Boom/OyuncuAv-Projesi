@@ -42,9 +42,9 @@ See our plans in [ROADMAP.md](ROADMAP.md).
 
 | Topic / *Başlık*        | Link                                    | Description / *Açıklama*                        |
 |-------------------------|-----------------------------------------|------------------------------------------------|
-| CS:GO Ağ Trafiği Analizi	      | [researchs/aircrack.md](researchs/aircrack.md) | In-depth analysis of Aircrack-ng suite. / *Aircrack-ng paketinin derinlemesine analizi.* |
-| Example Research Topic  | [researchs/your-research-file.md](researchs/your-research-file.md) | Brief overview of this research. / *Bu araştırmanın kısa bir özeti.* |
-| Add More Research       | *Link to your other research files*     | *Description of the research*                  |
+| CS:GO Ağ Trafiği Analizi	      | [researchs/aircrack.md](researchs/aircrack.md) | Counter-Strike: Global Offensive oyununun ağ bağlantılarının, kullanılan IP adreslerinin, portların ve sunucuların detaylı analizi.* |
+| Valorant Ağ Trafiği Analizi	  | [researchs/your-research-file.md](researchs/your-research-file.md) | Valorant oyununun ağ bağlantılarının, kullanılan IP adreslerinin, portların ve sunucuların detaylı analizi.* |
+| Wireshark Filtre Kılavuzu       | *Link to your other research files*     | *Oyun trafiği yakalama ve analizi için özel olarak hazırlanmış Wireshark yakalama ve görüntüleme filtrelerinin detaylı kılavuzu.*                  |
 
 ---
 
