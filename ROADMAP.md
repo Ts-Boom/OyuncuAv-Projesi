@@ -46,14 +46,20 @@ görsel formatlarda sunmayı amaçlamaktadır.
    - Paket boyutu dağılımlarının ve akış sürelerinin analizi.
 
 ### Veri Görselleştirme Modülü:
-Analiz edilen verileri (trafik yoğunluğu, en aktif sunucular, port kullanım dağılımları vb.) dinamik ve statik grafikler (çubuk grafikler, pasta grafikleri, çizgi grafikler, ısı haritaları) aracılığıyla görselleştirmek için Python kütüphaneleri (matplotlib, seaborn, plotly) kullanmak.
+Analiz edilen verileri (trafik yoğunluğu, en aktif sunucular, port kullanım dağılımları vb.) dinamik ve statik grafikler (çubuk grafikler, pasta grafikleri, çizgi grafikler, ısı haritaları) aracılığıyla görselleştirmek için Python kütüphaneleri (matplotlib, seaborn, plotly) kullanmak
 
 
-### Sahte Web Sunucusu
-Kimlik avı veya sahte içerik sunmak için bir web sunucusu oluşturun.
+## 4.2. V1.2 - Derinlemesine Protokol Analizi ve Güvenlik İncelemesi (Orta Vadeli Hedef)
+Bu aşama, oyun trafiğinin sadece yüzeysel değil, daha derinlemesine protokol seviyesinde incelenmesini ve potansiyel 
+güvenlik anormalliklerinin tespitini içerecektir.
 
-1. Flask’ı kurun: `pip install flask`
-2. Basit bir Flask uygulaması yazın:
+### Hedefler:
+1. **Oyun Protokolü İmzaları ve Deseni Tespiti**: Bilinen veya tespit edilen oyunlara özgü uygulama katmanı protokol imzalarını veya veri desenlerini belirlemek ve bunları otomatik olarak filtreleyebilme/tanımlayabilme yeteneği. Bu, belirli oyun içi eylemlerin (örn. vuruş kaydı, beceri kullanımı) ağ trafiğindeki karşılığını bulmaya yardımcı olabilir.
+2. **Ağ Performansı Metrikleri:** Paket yakalama verilerinden gecikme (Latency), titreme (Jitter) ve paket kaybı gibi kritik ağ performans metriklerini çıkararak oyun deneyimi üzerindeki etkilerini analiz etmek.
+3. **Anormal Trafik Desenleri Tespiti:** DDoS saldırıları, hile (cheat) motorlarının aktivitesi veya diğer kötü niyetli ağ davranışlarını işaret edebilecek anormal trafik desenlerini (örn. belirli bir IP'den gelen aşırı trafik, olağandışı port taramaları, anormal büyüklükte paketler) otomatik olarak algılama mekanizmaları geliştirmek.
+4. **Coğrafi Konum Haritalaması:** Tespit edilen sunucu IP adreslerinin coğrafi konumlarını (ülke, şehir) belirlemek için açık kaynak veya ticari coğrafi konum veri tabanları (örn. MaxMind GeoLite2) ile entegrasyon. Bu veriyi interaktif dünya haritaları üzerinde görselleştirerek sunucu dağılımlarını gösterme.
+5. **DNS Spoofing Zafiyet İncelemesi:**  Oyunların DNS çözümleme süreçlerini ve potansiyel DNS spoofing zafiyetlerini (örn. oyun istemcisinin veya sunucusunun DNS kayıtlarına güvenip güvenmediği) araştırmak. Bu alanda, Python ile basit DNS spoofing senaryolarının simülasyonu ve olası etkilerinin analizi.
+6. **Potansiyel Teknolojiler:** Python, Coğrafi Konum API'leri/Veritabanları, Trafik Analizi Algoritmaları, Makine Öğrenimi (Anormal Tespit için temel düzeyde).
 
 ```python
 from flask import Flask, render_template
