@@ -66,23 +66,20 @@ Bu uzun vadeli hedef, projenin sadece bir araştırma çıktıları koleksiyonu 
 kullanıcıların kendi analizlerini yapabileceği etkileşimli bir araç veya modüler bir analiz platformuna dönüşmesini kapsamaktadır.
 
 ### Hedefler:
-  -**Basit Web Arayüzü (Web UI)**: Kullanıcıların .pcap dosyalarını yükleyebileceği, temel analiz sonuçlarını ve görselleştirmeleri doğrudan tarayıcı üzerinden görüntüleyebileceği, kullanıcı dostu basit bir web arayüzü geliştirmek (örn. Flask veya Django frameworkleri ile).
-  -Dinamik Oyun ve Kural Ekleme: Kullanıcıların veya geliştiricilerin, yeni oyunları veya özel analiz kurallarını kolayca platforma ekleyebileceği modüler ve genişletilebilir bir mimari oluşturmak.
-  
-```python
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return render_template('fake_login.html')
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=80)
+  - **Basit Web Arayüzü (Web UI)**: Kullanıcıların .pcap dosyalarını yükleyebileceği, temel analiz sonuçlarını ve görselleştirmeleri doğrudan tarayıcı üzerinden görüntüleyebileceği, kullanıcı dostu basit bir web arayüzü geliştirmek (örn. Flask veya Django frameworkleri ile).
+  - **Dinamik Oyun ve Kural Ekleme:** Kullanıcıların veya geliştiricilerin, yeni oyunları veya özel analiz kurallarını kolayca platforma ekleyebileceği modüler ve genişletilebilir bir mimari oluşturmak.
+  - **Otomatik Raporlama ve Dışa Aktarma:** Analiz sonuçlarını otomatik olarak PDF, HTML veya CSV gibi okunabilir ve paylaşılabilir rapor formatlarına dönüştürme ve dışa aktarma yeteneği eklemek.
+  - **Kapsamlı Dokümantasyon ve Katkı Rehberleri:** Projeye dışarıdan katkıda bulunmak isteyen geliştiriciler için daha detaylı dokümantasyon (API referansları, mimari dokümanları) ve katkı rehberleri (CONTRIBUTING.md) hazırlamak.
+  - **Docker Entegrasyonu (Kolay Dağıtım):** Projeyi Dockerize ederek, bağımlılık sorunları yaşamadan farklı ortamlarda kolayca kurulup çalıştırılabilmesini sağlamak.
+  - **Potansiyel Teknolojiler:** Python web frameworkleri (Flask, Django), JavaScript/HTML/CSS (ön yüz için), Docker, Sphinx (dokümantasyon için).
+    
+## 5. Anahtar Sonraki Adımlar (Mevcut Odak)
 ```
-
-- `templates/fake_login.html` dosyası oluşturun (örneğin, bir giriş sayfası taklidi).
+ 1. CS:GO, Valorant ve PUBG için kapsamlı ve detaylı pcap yakalama senaryolarının tamamlanması.
+ 2. Wireshark yakalama ve görüntüleme filtrelerinin her oyun için optimize edilmesi ve nihai hale getirilmesi.
+ 3. researchs klasörü altındaki her bir oyunun ağ analizi (örn. csgo_network_analysis.md, valorant_network_analysis.md) ve Wireshark filtreleri (wireshark_filters.md) hakkındaki Markdown dosyalarının içeriğinin detaylıca doldurulması.
+ 4. Projenin Python ile ilgili tüm bağımlılıklarını (eğer varsa) doğru bir şekilde listeleyen requirements.txt dosyasının oluşturulması ve güncel tutulması.
+```
 
 ## Gelişmiş Geliştirmeler
 
