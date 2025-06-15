@@ -76,7 +76,7 @@ bir tehdit avcılığı stratejisinin güçlü, ayrıntılı bir bileşeni olara
 |----------|----------|----------|----------|
 | 1. YZ/ML Destekli Ağ Anomali Tespiti| Ağ davranışındaki sapmaları tespit etmek için gelişmiş ML modellerini kullanma| Veri yakalama, anomali doğrulama, model besleme.| Bilinmeyen tehditleri ve sıfırıncı gün saldırılarını proaktif olarak belirleme|
 | 2. Gelişmiş Kullanıcı ve Varlık Davranış Analitiği (UEBA)| Kullanıcı ve varlık davranışındaki anormallikleri belirlemek için YZ/ML kullanma.| Davranışsal veri sağlama, şüpheli aktiviteyi derinlemesine inceleme.| iç tehditleri, tehlikeye atılmış hesapları ve riskli kullanıcı davranışlarını tespit etme.|
-| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
+| 3. Buluta Özel Paket Yakalama ve Adli Bilişim| Geleneksel Wireshark yeteneklerini bulut ortamlarına genişletme.| Bulut kaynaklı sistem çağrılarını ve paketleri analiz etme.| Bulut tabanlı saldırılarda görünürlük sağlama, adli kanıt toplama|
 | Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
 | Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
 | Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
