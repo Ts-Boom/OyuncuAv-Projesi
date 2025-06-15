@@ -44,8 +44,8 @@ See our plans in [ROADMAP.md](ROADMAP.md).
 |-------------------------|-----------------------------------------|------------------------------------------------|
 | CS:GO Ağ Trafiği Analizi	      | [researchs/csgo_network_analysis.md](researchs/csgo_network_analysis.md) | Counter-Strike: Global Offensive oyununun ağ bağlantılarının, kullanılan IP adreslerinin, portların ve sunucuların detaylı analizi.* |
 | Valorant Ağ Trafiği Analizi	  | [researchs/valorant_network_analysis.md](researchs/valorant_network_analysis.md) | Valorant oyununun ağ bağlantılarının, kullanılan IP adreslerinin, portların ve sunucuların detaylı analizi.* |
-| Wireshark Filtre Kılavuzu       | [researchs/game_server_locations.md](researchs/game_server_locations.md)     | *Oyun trafiği yakalama ve analizi için özel olarak hazırlanmış Wireshark yakalama ve görüntüleme filtrelerinin detaylı kılavuzu.*                  |
-| Oyun Sunucusu Konumları ve IP Havuzları      | *Link to your other research files*     | *Analiz edilen oyunların kullandığı sunucu konumları, IP havuzları ve olası CDN (İçerik Dağıtım Ağı) kullanımları hakkında araştırma.*                  |
+| Wireshark Filtre Kılavuzu       | [researchs/wireshark_filters.md](researchs/wireshark_filters.md)     | *Oyun trafiği yakalama ve analizi için özel olarak hazırlanmış Wireshark yakalama ve görüntüleme filtrelerinin detaylı kılavuzu.*                  |
+| Oyun Sunucusu Konumları ve IP Havuzları      | [researchs/game_server_locations.md](researchs/game_server_locations.md)     | *Analiz edilen oyunların kullandığı sunucu konumları, IP havuzları ve olası CDN (İçerik Dağıtım Ağı) kullanımları hakkında araştırma.*                  |
 
 
 
