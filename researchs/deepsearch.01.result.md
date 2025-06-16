@@ -119,11 +119,13 @@ ve kapsamlı paket ayrıntılarının  daha derinlemesine anlaşılmasını gere
 |----------|----------|----------|
 | Otomatik Kodlayıcılar (Autoencoders)| Veri Ön İşleme, Anomali Tanımlama| Yeni tehditleri tespit eder, derin trafik analizi |
 | Isolation Forest| Anomali Tanımlama| Trafik modellerindeki anormallikleri verimli bir şekilde belirler, çeşitli anomali türlerini sınıflandırır.|
-| Hücre 2.1| Hücre 2.2| Hücre 2.3|
-| Hücre 1.1| Hücre 1.2| Hücre 1.3|
-| Hücre 2.1| Hücre 2.2| Hücre 2.3|
-| Hücre 1.1| Hücre 1.2| Hücre 1.3|
-| Hücre 2.1| Hücre 2.2| Hücre 2.3|
-| Hücre 1.1| Hücre 1.2| Hücre 1.3|
+| Random Forest| Anomali Tespiti, Sınıflandırma| Yüksek doğrulukta saldırı tespiti, yanıt süresini azaltır (hibrit modellerde) |
+| Destek Vektör Makineleri (SVM)| Hücre 1.2| Hücre 1.3|
+| Hücre 2.1| Siber Tehdit Sınıflandırması, Anomali Tanımlama| Yüksek doğrulukta sınıflandırma, yeni tehditleri tespit eder|
+| Stochastic Gradient Descent| Sınıflandırma| Etiketli verilerle bilinen saldırı türlerini öğrenir|
+| K-Nearest Neighbor| Sınıflandırma| Etiketli verilerle bilinen saldırı türlerini öğrenir|
+| Gaussian Naive Bayes| Sınıflandırma| Etiketli verilerle bilinen saldırı türlerini öğrenir|
+| Karar Ağacı (Decision Tree)| Sınıflandırma| Etiketli verilerle bilinen saldırı türlerini öğrenir|
+| AdaBoost| Sınıflandırma| Etiketli verilerle bilinen saldırı türlerini öğrenir|
 
 
