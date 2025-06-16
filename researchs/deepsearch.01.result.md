@@ -77,12 +77,12 @@ bir tehdit avcılığı stratejisinin güçlü, ayrıntılı bir bileşeni olara
 | 1. YZ/ML Destekli Ağ Anomali Tespiti| Ağ davranışındaki sapmaları tespit etmek için gelişmiş ML modellerini kullanma| Veri yakalama, anomali doğrulama, model besleme.| Bilinmeyen tehditleri ve sıfırıncı gün saldırılarını proaktif olarak belirleme|
 | 2. Gelişmiş Kullanıcı ve Varlık Davranış Analitiği (UEBA)| Kullanıcı ve varlık davranışındaki anormallikleri belirlemek için YZ/ML kullanma.| Davranışsal veri sağlama, şüpheli aktiviteyi derinlemesine inceleme.| iç tehditleri, tehlikeye atılmış hesapları ve riskli kullanıcı davranışlarını tespit etme.|
 | 3. Buluta Özel Paket Yakalama ve Adli Bilişim| Geleneksel Wireshark yeteneklerini bulut ortamlarına genişletme.| Bulut kaynaklı sistem çağrılarını ve paketleri analiz etme.| Bulut tabanlı saldırılarda görünürlük sağlama, adli kanıt toplama|
-| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
-| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
-| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
-| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
-| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
-| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
-| Hücre 2.1| Hücre 2.2| Hücre 2.3| Hücre 2.4|
+| 4. Otomatik Tehdit İstihbaratı (TI) Entegrasyonu ve SOAR Playbook'ları| Tehdit istihbaratını güvenlik operasyonlarına entegre etme ve yanıtları otomatikleştirme.| IoC'leri doğrulama, derinlemesine bağlam sağlama, veri paylaşımını kolaylaştırma.| Tehdit tespitini hızlandırma, olay yanıtını otomatikleştirme, analist yükünü azaltma.|
+| 5. Şifreli Trafik İçin Derin Paket İncelemesi (DPI)| Şifrelenmiş ağ trafiğindeki gizli tehditleri analiz etme.| TLS/QUIC şifre çözme, özel protokol analizi, parmak izi çıkarma.| Şifreli tünellerde gizlenen kötü amaçlı etkinliği ortaya çıkarma.|
+| 6. IoT/OT Protokol Analizi ve Cihaza Özel Tehdit Avcılığı| Endüstriyel ve IoT ortamlarındaki güvenlik açıklarını hedefleme.| Tescilli protokolleri ayrıştırma, cihaz davranış anormalliklerini tespit etme.| Yakınsak BT/OT/IoT ağlarındaki kör noktaları ve güvenlik açıklarını kapatma.|
+| 7. Özel Otomasyon için Wireshark Betikleme (Lua/Python)| Tekrarlayan görevleri otomatikleştirmek ve Wireshark işlevselliğini genişletmek.| Özel ayrıştırıcılar oluşturma, analiz iş akışlarını otomatikleştirme.| Tehdit avcılığı yeteneklerini özelleştirme, verimliliği artırma, niş tehditleri hedefleme.|
+| 8. Ağ Analizi Yoluyla Proaktif Güvenlik Açığı Yönetimi| Ağ yapılandırma hatalarını ve açıkları istismardan önce belirleme.| Zayıf güvenlik hijyenini, yanlış yapılandırmaları ve açık hizmetleri tespit etme.| Saldırı yüzeyini azaltma, güvenlik duruşunu güçlendirme, ihlalleri önleme.|
+| 9. Sıfır Güven Ağ Görünürlüğü ve Politika Uygulaması| Sıfır Güven ilkelerinin etkinliğini doğrulama ve ihlalleri tespit etme.| Mikro segmentasyon ihlallerini izleme, anormal iç iletişimi belirleme.| İç tehditlere karşı koruma sağlama, yanal hareketi engelleme.|
+| 10. Büyük Ölçekli PCAP Analizi ve Veri Sızdırma Tespiti| Büyük hacimli paket yakalama dosyalarını verimli bir şekilde analiz etme.| Büyük veri kümelerini yönetme, sızdırma yollarını yeniden yapılandırma.| Geniş ölçekli veri ihlallerini ve kötü amaçlı yazılım yayılımlarını tespit etme.|
 
 
