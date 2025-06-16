@@ -150,6 +150,21 @@ Davranışsal analitiğin adaptif eğitimle entegrasyonu , potansiyel **"oyuncul
 yönelik proaktif bir yaklaşımı işaret etmektedir. Bu durum, nihayetinde işgücünü **"sağlam savunucular"** haline getirme potansiyeli taşımaktadır. Bu aynı zamanda, tek seferlik eğitimlerden 
 ziyade sürekli güvenlik farkındalığına doğru bir geçişi de ima etmektedir.   
 
+## Teknik/Eğilim 3: Buluta Özel Paket Yakalama ve Adli Bilişim
+
+Kuruluşlar hızla çoklu bulut ortamlarına geçtikçe , bulut altyapısının geçici, dağıtık ve paylaşılan yapısı nedeniyle geleneksel ağ adli bilişimi önemli zorluklarla karşılaşmaktadır. Bulut adli bilişimi, bu dinamik ortamlarda kanıt koruma, olay tespiti, analiz, atıf, sınırlama ve belgeleme üzerine odaklanmaktadır. Bulut sağlayıcıları genellikle fiziksel donanıma doğrudan erişime izin vermediğinden, sanal araçlara bağımlılık zorunludur.   
+
+Wireshark Vakfı'ndan (Sysdig) yeni bir açık kaynak araç olan Stratoshark, Wireshark'ın yeteneklerini bulut ortamlarına genişleterek bu sorunu doğrudan ele almaktadır. Bir ana bilgisayardaki sistem çağrılarını ve günlük mesajlarını analiz eder, Wireshark'ın kullanıcı arayüzünü farklı bir alanın tanıdık etkileşimli analizi için yansıtır. Stratoshark, Kubernetes, konteynerler ve diğer buluta özel ortamlardaki beklenmedik davranışlar için gerçek zamanlı tespit ve uyarıları etkinleştirmek üzere Sysdig'in Falco kütüphanelerini, depolarını ve eklentilerini kullanır.   
+
+ksniff gibi Kubectl eklentileri, Kubernetes'i klasik ağ araçlarıyla birleştirerek hedef bir pod içindeki tcpdump'ın yerel bir Wireshark örneğine paketleri akışını sağlar.   
+
+kubectl-capture, canlı Kubernetes pod'larından sistem çağrısı yakalamalarını tetikler, Falco ve Sysdig ile entegre olarak yan araçlara veya kalıcı aracılara ihtiyaç duymadan zengin izleme verileri üretir. Datadog ve LogicMonitor gibi bulut tabanlı ağ izleme araçları, çoklu bulut işletmeleri ve Yönetilen Hizmet Sağlayıcıları (MSP'ler) için aracısız izleme ve YZ destekli analitik sunar.   
+
+Bulut ortamları, özellikle fiziksel donanıma doğrudan erişimi kısıtlaması açısından geleneksel altyapıdan temelden farklıdır , bu da geleneksel paket yakalamayı zorlaştırmaktadır. Stratoshark  ve    
+
+kubectl eklentileri  gibi araçların ortaya çıkışı, sistem çağrılarına, günlüklere ve konteyner düzeyindeki trafiğe odaklanarak bu zorluğu açıkça ele almaktadır. Daha da önemlisi, bu araçlar Wireshark'ın tanıdık arayüzünü ve analitik prensiplerini korumaktadır. Bu durum, ağ adli bilişiminde kritik bir evrimi göstermektedir: derin paket analizinin (ayrıntılılık, filtreleme, etkileşimli kullanıcı arayüzü)    
+
+ilkeleri, buluta özel bağlamlarda yeni veri kaynaklarına (sistem çağrıları, günlükler) uygulanmaktadır. Bu, güvenlik ekiplerinin tutarlı bir soruşturma iş akışı sürdürmesine ve altyapıları buluta geçse bile mevcut Wireshark yeterliliğinden yararlanmasına olanak tanır; tıpkı Wireshark'ın ağ paketi analizini demokratikleştirmesi gibi, bulut görünürlüğünü de etkili bir şekilde demokratikleştirmektedir. Bulut bileşenlerinin geçici doğası , etkili "oyuncu avcılığı" için geriye dönük veri incelemesinden ziyade gerçek zamanlı yakalama ve analizin daha da kritik hale geldiği anlamına gelmektedir.   
 
 
 
