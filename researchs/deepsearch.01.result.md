@@ -118,9 +118,7 @@ ve kapsamlı paket ayrıntılarının  daha derinlemesine anlaşılmasını gere
 | Algoritma | Anomali Tespitindeki Birincil İşlev | Temel Fayda/Kullanım Durumu |
 |----------|----------|----------|
 | Otomatik Kodlayıcılar (Autoencoders)| Veri Ön İşleme, Anomali Tanımlama| Yeni tehditleri tespit eder, derin trafik analizi |
-| Isolation Forest| 	
-Anomali Tanımlama| Trafik modellerindeki anormallikleri verimli bir şekilde belirler, çeşitli anomali türlerini sınıflandırır |
-| Hücre 1.1| Hücre 1.2| Hücre 1.3|
+| Isolation Forest| Anomali Tanımlama| Trafik modellerindeki anormallikleri verimli bir şekilde belirler, çeşitli anomali türlerini sınıflandırır.|
 | Hücre 2.1| Hücre 2.2| Hücre 2.3|
 | Hücre 1.1| Hücre 1.2| Hücre 1.3|
 | Hücre 2.1| Hücre 2.2| Hücre 2.3|
