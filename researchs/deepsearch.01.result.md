@@ -205,6 +205,59 @@ genişlemesi gerekmektedir; bu da onların benzersiz protokolleri, güvenlik aç
 Wireshark, işlevselliğini genişletmek, tekrarlayan analiz görevlerini otomatikleştirmek ve özel ayrıştırıcılar oluşturmak için başta Lua olmak üzere kapsamlı betiklemeyi destekler. Python,    
 pyshark gibi kütüphaneler aracılığıyla, gelişmiş analiz ve harici araçlarla entegrasyon için PCAP dosyalarıyla da etkileşime girebilir.
 
-- **Özel Ayrıştırıcılar:** Tescilli veya belgelenmemiş protokoller için özel ayrıştırıcılar geliştirmek, özellikle niş veya endüstriyel ortamlarda özel ağ trafiği hakkında derinlemesine görünürlük elde etmek için hayati öneme sahiptir.
-- **Analizi Otomatikleştirmek:**  Betikler, makine öğrenimi modelleri için özellik çıkarma , özel filtreler oluşturma, belirli raporlar üretme veya gözlemlenen paket modellerine göre harici eylemleri tetikleme gibi tekrarlayan görevleri otomatikleştirebilir. Örneğin, bir Python betiği protokol türünü, paket uzunluğunu, kaynak/hedef IP'lerini/portlarını, TCP yeniden iletimlerini/sıfırlama bayraklarını çıkarabilir ve ardından anormallikleri belirlemek için Isolation Forest algoritmasını uygulayabilir.
-- **Tehdit Avcılığı Geliştirmeleri:** Lua betikleri, özel bağlam menüleri ekleyerek veya Tehlike Göstergelerini (IoC'ler) doğrudan ekrana entegre ederek Wireshark'ın kullanıcı arayüzünü geliştirebilir, tehdit avları sırasında anında bağlamsal farkındalık sağlayabilir.   
+ - **Özel Ayrıştırıcılar:** Tescilli veya belgelenmemiş protokoller için özel ayrıştırıcılar geliştirmek, özellikle niş veya endüstriyel ortamlarda özel ağ trafiği hakkında derinlemesine görünürlük elde etmek için hayati öneme sahiptir.
+ - **Analizi Otomatikleştirmek:**  Betikler, makine öğrenimi modelleri için özellik çıkarma , özel filtreler oluşturma, belirli raporlar üretme veya gözlemlenen paket modellerine göre harici eylemleri tetikleme gibi tekrarlayan görevleri otomatikleştirebilir. Örneğin, bir Python betiği    protokol türünü, paket uzunluğunu, kaynak/hedef IP'lerini/portlarını, TCP yeniden iletimlerini/sıfırlama bayraklarını çıkarabilir ve ardından anormallikleri belirlemek için Isolation Forest algoritmasını uygulayabilir.
+ - **Tehdit Avcılığı Geliştirmeleri:** Lua betikleri, özel bağlam menüleri ekleyerek veya Tehlike Göstergelerini (IoC'ler) doğrudan ekrana entegre ederek Wireshark'ın kullanıcı arayüzünü geliştirebilir, tehdit avları sırasında anında bağlamsal farkındalık sağlayabilir.
+
+Wireshark'ın açık kaynak doğası ve güçlü betikleme yetenekleri (Lua, Python) temel özellikleri olarak defalarca vurgulanmaktadır. Tescilli protokoller için özel ayrıştırıcılara duyulan açık ihtiyaç  ve otomatik anomali tespiti için betikleme kullanımı , özel çözümlere olan talebi vurgulamaktadır. Bu durum, 2025 yılında son derece etkili "oyuncu avcılarının" yalnızca mevcut araçların yetkin kullanıcıları değil, giderek kendi analitik yeteneklerinin    
+
+yaratıcıları ve özelleştiricileri olduğunu göstermektedir. Betik yazma veya özel ayrıştırıcılar geliştirme yeteneği, analistlerin Wireshark'ı benzersiz kurumsal ortamlara uyarlamasına, belirsiz veya özel protokolleri analiz etmesine veya hazır çözümlerin gözden kaçırabileceği yeni saldırı tekniklerine yanıt vermesine olanak tanır. Bu, genel ağ analizinin ötesine geçerek, tehdit avcılığı ekibi içinde ağ, güvenlik ve programlama becerilerinin sofistike bir karışımını gerektiren, son derece hedefe yönelik, özel tehdit avcılığına doğru bir geçişi temsil etmektedir.
+
+## Teknik/Eğilim 8: Ağ Analizi Yoluyla Proaktif Güvenlik Açığı Yönetimi
+
+Bu teknik, saldırganlar tarafından istismar edilmeden önce ağ yapılandırma hatalarının, yamalanmamış sistemlerin ve açıkta kalan hizmetlerin sürekli olarak belirlenmesini ve giderilmesini içerir. Bu, ağ trafiği analizinin zayıflıkları tespit etmeye ve güvenlik hijyenini sağlamaya yardımcı olduğu proaktif bir güvenlik duruşuna doğru stratejik bir geçişi temsil eder.   
+
+Wireshark, olağandışı port etkinliğini, şifrelenmemiş hassas verileri  ve zayıf güvenlik hijyeni veya yanlış yapılandırmaların diğer işaretlerini tespit edebilir. Ağ segmentasyon politikalarının etkinliğini doğrulamak  ve cihaz yapılandırmalarını güçlendirmenin bir parçası olarak kullanılmayan hizmetlerin veya arayüzlerin (örneğin, USB, SSH, Telnet, SNMPv1) devre dışı bırakıldığından emin olmak için kullanılabilir. Paket analizi, açık portlar veya yanlış yapılandırılmış güvenlik duvarları gibi ağ yapılandırma hatalarını belirlemeye yardımcı olur. 2025'te temel odak noktalarından biri, uç noktalar ve SIEM'lerden gelen uyarılara yalnızca reaktif olarak yanıt vermek yerine, proaktif güvenlik için "ağ etkinliğini izlemek ve uç cihaz günlüklerini incelemektir".   
+
+"Proaktif" güvenlik açığı yönetimine verilen önem  ve riskleri belirlemek için ağ etkinliğini izlemeye yönelik geçiş , ağ trafiğinin yalnızca saldırı tespiti için değil, aynı zamanda güvenlik açığı istihbaratı için de zengin ve yeterince kullanılmayan bir kaynak olduğunu düşündürmektedir. Ağ trafiği içinde düz metin parolaları  veya şifrelenmemiş aygıt yazılımı güncellemelerini  doğrudan gözlemleme yeteneği, kritik yapılandırma hatalarını veya güvenli olmayan uygulamaları anında ortaya çıkarır. Geleneksel olarak olay sonrası analiz veya sorun giderme için kullanılan Wireshark,    
+
+önleyici güvenlik için hayati bir araç haline gelmektedir. Ağdaki yanlış yapılandırmaları, güvensiz protokolleri ve zayıf güvenlik hijyeni uygulamalarını aktif olarak avlayarak, kuruluşlar bilinen zayıflıkları saldırganlar istismar etmeden önce duruşlarını güçlendirebilirler. Bu, "oyuncu avcılığının" aynı zamanda bir kuruluşu kolay bir hedef haline getiren iç güvenlik açıklarını bulma ve düzeltme, böylece genel saldırı yüzeyini ve başarılı ihlallerin olasılığını azaltma ile de ilgili olduğu fikrini pekiştirmektedir.
+
+## Teknik/Eğilim 9: Sıfır Güven Ağ Görünürlüğü ve Politika Uygulaması
+
+Sıfır Güven, 2025'te varsayılan güvenlik modeli haline gelmekte olup, hiçbir kullanıcının veya cihazın konumundan bağımsız olarak doğal olarak güvenilir olmadığı ilkesiyle çalışmaktadır. Bu model, tüm ağ etkileşimlerinin sıkı kimlik doğrulaması, mikro segmentasyon ve sürekli izlenmesini gerektirir.   
+
+Wireshark, segmentlere ayrılmış bölgeler arasındaki trafik akışını analiz ederek, yetkisiz yanal hareketin önlendiğinden ve politikaların doğru bir şekilde uygulandığından emin olarak mikro segmentasyonun etkinliğini doğrulamak için kullanılabilir. Sıfır Güven politikalarına karşı gerçek ağ davranışını gözlemleyerek politika tabanlı erişim kontrollerinin ve cihaz duruşu kontrollerinin doğrulanmasına yardımcı olur. UEBA sistemleri, SOAR ile entegre olarak, Sıfır Güven çerçevesinde kullanıcı risk puanlarına göre erişim düzeylerini dinamik olarak ayarlayabilir, şüpheli etkinlikler için MFA'yı tetikleyebilir veya erişimi engelleyebilir. Wireshark, Sıfır Güven ilkelerinin ihlalini gösterebilecek anormallikleri, örneğin segmentler arasında beklenmedik iletişimi, olağandışı erişim girişimlerini veya güvenlik kontrollerini atlama girişimlerini tespit etmeye yardımcı olabilir.   
+
+Sıfır Güven, "hiçbir kullanıcının veya cihazın doğal olarak güvenilir olmadığı"  ilkesini benimsemekte ve mikro segmentasyon ile sürekli izlemeye büyük önem vermektedir. Bu mimari değişim, her etkileşimin titizlikle incelendiği, son derece ayrıntılı ve dinamik bir ağ ortamı yaratmaktadır. Sıfır Güven mimarisinde, "oyuncu avcılığı" temelden çevre ihlallerini tespit etmekten, ağ içindeki herhangi bir yetkisiz veya anormal etkinliği, ne kadar küçük veya önemsiz olursa olsun, belirlemeye doğru kaymaktadır. Wireshark'ın paket düzeyinde eşsiz derin görünürlük yeteneği, Sıfır Güven politikalarının gerçekten amaçlandığı gibi uygulandığını doğrulamak ve tehlikeye atılmış bir kimliği, sözde güvenli bir segment içindeki yanal hareket girişimini veya bir politika atlatmayı gösterebilecek ince sapmaları tespit etmek için çok önemlidir. Bu, tüm ağı bir dizi küçük, gözlemlenebilir ve sürekli izlenen avlanma alanına dönüştürmekte, bu da daha öncekinden daha ayrıntılı analiz gerektirmektedir.   
+
+## Teknik/Eğilim 10: Büyük Ölçekli PCAP Analizi ve Veri Sızdırma Tespiti
+
+Artan veri hacimleri, uç noktaların çoğalması ve sofistike saldırıların giderek veri sızdırmaya odaklanmasıyla , veri ihlallerini, kötü amaçlı yazılım yayılımını ve yetkisiz veri transferlerini belirlemek için büyük paket yakalama dosyalarını verimli bir şekilde analiz etmek kritik önem taşımaktadır. Veri sızdırma, saldırganlar için genellikle daha kazançlıdır ve mağdur kuruluşların tespit etmesi ve önlemesi önemli ölçüde daha zordur.   
+
+Wireshark, belirli paketlere derinlemesine nüfuz etmek için mükemmel olsa da, uzun süreli, yüksek hacimli yakalama için dumpcap gibi araçlar önerilmektedir.   
+
+large-pcap-analyzer, çok büyük PCAP dosyaları üzerinde yaygın işlemleri yüksek hızda gerçekleştirmek için özel olarak tasarlanmıştır.   
+
+editcap ve mergecap gibi diğer yardımcı programlar, büyük yakalama dosyalarını yönetmek ve işlemek için esastır. Arkime (eski adıyla Moloch) gibi tamamlayıcı araçlar, büyük ölçekli, açık kaynaklı, indekslenmiş paket yakalama ve arama aracı , Brim  ve Brute Shark (PCAP dosyalarının derinlemesine işlenmesi ve incelenmesi için bir Ağ Adli Analiz Aracı (NFAT), ), Wireshark'ın etkileşimli yeteneklerini aşan devasa veri kümelerini işlemek, indekslemek ve analiz etmek için hayati öneme sahiptir. Wireshark'ın gelişmiş filtreleme yetenekleri ve akış yeniden yapılandırma özellikleri , veri sızdırma yollarını izlemek, iletişim akışlarını yeniden yapılandırmak ve şüpheli paket içeriklerini incelemek için paha biçilmezdir.   
+
+Ağ trafiğinin büyük hacmi  ve veri sızdırmanın tespitine kritik odaklanma , tekil, etkileşimli Wireshark analizinin büyük ölçekli kurumsal ortamlar için yetersiz olduğu anlamına gelmektedir. Arkime, Brim ve    
+
+large-pcap-analyzer gibi devasa PCAP dosyaları için tasarlanmış araçların açıkça belirtilmesi , terabaytlarca veriyi işleme gerekliliğini doğrudan ele almaktadır. Bu durum, 2025'te etkili "oyuncu avcılığının" özel araçlardan oluşan bir    
+
+ekosistem gerektirdiğini vurgulamaktadır. Wireshark, belirli olayların veya anormalliklerin derinlemesine, ayrıntılı analizi için vazgeçilmez bir "büyüteç" olmaya devam etmektedir, ancak adli ve avcılık amaçları için büyük paket verilerinin yaşam döngüsünü yönetebilen yüksek performanslı yakalama, depolama, indeksleme ve görselleştirme çözümleriyle tamamlanmalıdır. Zorluk sadece bireysel paketleri analiz etmek değil, tüm ağ verilerini ölçekli olarak yönetmek ve bunlardan istihbarat çıkarmaktır; bu da sağlam depolama ve işleme altyapısına önemli bir yatırım gerektirmektedir.
+
+## Tablo 4: Wireshark Destekli Tehdit Avcılığı İçin Tamamlayıcı Araçlar (2025)
+
+| Araç Adı | Başlık 2 | Başlık 3 |
+|----------|----------|----------|
+| Dumpcap| Uzun süreli, yüksek hacimli paket yakalama| Wireshark'ın yakalama motoru olarak görev yapar, büyük veri kümeleri için idealdir.|
+| Editcap / Mergecap| Yakalama dosyalarını düzenleme ve birleştirme| Yakalama dosyalarının ön/son işlenmesini sağlar, analiz için veriyi hazırlar.|
+| Arkime (eski Moloch)| Büyük ölçekli, indekslenmiş paket yakalama ve arama| Wireshark'ın etkileşimli analizini tamamlayan geniş ölçekli PCAP yönetimi ve araması sunar.|
+| Brim| Günlük ve PCAP arşivleme ve tarama|Günlük ve PCAP verilerini düzenli bir şekilde depolama ve kolayca gözden geçirme imkanı sağlar.|
+| Brute Shark| Ağ Adli Analiz Aracı (NFAT)| PCAP dosyalarının derinlemesine işlenmesi ve incelenmesi için özel yetenekler sunar.|
+| CloudShark| Tarayıcı tabanlı yakalama görüntüleme ve analiz| Yakalamaları tarayıcıda görüntüleme, etiketleme ve URL ile paylaşma yeteneği sağlar.|
+| Dshell| Genişletilebilir ağ adli analiz çerçevesi| Ağ paketi yakalamalarının ayrıştırılmasını destekleyen eklentilerin hızlı gelişimini sağlar.|
+| NetworkMiner| Ağ adli analiz aracı| PCAP dosyalarını analiz ederek HTTP başlıklarını, aktarılan ikili dosyaları ve belgeleri çıkarır.|
+| Stratoshark| Buluta özel sistem çağrısı ve günlük analizi| Wireshark'ın prensiplerini bulut ortamlarına genişleterek sistem çağrısı görünürlüğü sağlar.|
+| Ksniff (Kubectl eklentisi)| Kubernetes pod'larından ağ paketi yakalama| Kubernetes ortamlarında tcpdump'ı Wireshark'a akışını sağlayarak buluta özel görünürlük sağlar.|
