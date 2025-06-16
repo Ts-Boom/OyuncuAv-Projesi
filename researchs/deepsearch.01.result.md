@@ -128,4 +128,29 @@ ve kapsamlı paket ayrıntılarının  daha derinlemesine anlaşılmasını gere
 | Karar Ağacı (Decision Tree)| Sınıflandırma| Etiketli verilerle bilinen saldırı türlerini öğrenir|
 | AdaBoost| Sınıflandırma| Etiketli verilerle bilinen saldırı türlerini öğrenir|
 
+## Teknik/Eğilim 2: Gelişmiş Kullanıcı ve Varlık Davranış Analitiği (UEBA)
+
+UEBA sistemleri, YZ ve Makine Öğrenimi (ML) kullanarak ağ ve sistem etkinliğini izler, normal kullanıcı ve varlık davranışının temel çizgilerini oluşturur.
+Daha sonra, iç tehditleri, tehlikeye atılmış hesapları veya diğer güvenlik risklerini gösterebilecek sapmaları işaretler. Bu, anormal oturum açma girişimlerini
+veya olağandışı veri erişim modellerini belirlemeyi içerir. UEBA, riskleri önceliklendirir ve tehditleri ciddiyetine göre sıralayarak bir **"akıllı gözetim sistemi"** gibi hareket eder.   
+
+Wireshark, UEBA'nın veri toplama aşaması için kritik olan ayrıntılı **"ağ trafiği verilerini"** sağlar ve şüpheli bir etkinliğe dahil olan belirli paketler
+ve protokoller hakkında derinlemesine bilgi sunar. İşletim sistemi, tarayıcı sürümü, ekran çözünürlüğü, eklentiler, dil ayarları ve ağ bilgileri (IP adresi, coğrafi konum)
+gibi özellikler kullanılarak cihaz parmak izi çıkarma, benzersiz tanımlama ve davranışsal analiz için UEBA'nın ayrılmaz bir parçasıdır. Wireshark, 
+şifreli trafiği analiz etmek için JA3/JA4 parmak izi çıkarma yeteneğiyle genişletilebilir, SSL/TLS el sıkışma özelliklerine dayanarak kötü amaçlı yazılımları
+veya olağandışı istemci-sunucu iletişimlerini belirleyebilir. UEBA, şüpheli etkinlikler için Çok Faktörlü Kimlik Doğrulama (MFA) veya tam zamanında eğitim modülleri
+gibi otomatik yanıtları tetiklemek üzere SOAR platformlarıyla entegre olur ve kullanıcı risk puanlarına göre erişim düzeylerini dinamik olarak ayarlar.   
+
+2025 Verizon veri ihlali raporu, işgücünün %8'inin olayların %80'inden sorumlu olduğunu vurgulayarak kritik bir güvenlik açığını ortaya koymaktadır. Bu durum,
+insan unsurunun önemini açıkça göstermektedir. Davranışsal analitik, özellikle Açıklanabilir YZ (XAI) ile desteklendiğinde, **"güvenlik uyarılarının arkasındaki somut gerekçeyi"** sunar,
+şeffaflık ve eyleme geçirilebilir bilgiler sağlar. Bu yetenek, dinamik erişim düzeyi değişiklikleri veya tam zamanında eğitim modüllerinin tetiklenmesi gibi
+**"gerçek zamanlı davranışsal müdahalelere"** olanak tanır. Bu durum, **"oyuncu avcılığının"** yalnızca teknik ağ analizinin ötesine geçerek insan davranışını da kapsadığını göstermektedir.
+Wireshark, insan psikolojisini doğrudan analiz etmese de, UEBA'nın yorumlayıp işaretlediği insan eylemlerinin (örneğin, olağandışı veri sızdırma, anormal erişim modelleri) ağ kanıtını sağlar.
+Davranışsal analitiğin adaptif eğitimle entegrasyonu , potansiyel **"oyuncuları"** (kötü niyetli veya ihmalkar içerdekiler) eğitmeye ve insan kaynaklı riskleri önemli ölçüde azaltmaya 
+yönelik proaktif bir yaklaşımı işaret etmektedir. Bu durum, nihayetinde işgücünü **"sağlam savunucular"** haline getirme potansiyeli taşımaktadır. Bu aynı zamanda, tek seferlik eğitimlerden 
+ziyade sürekli güvenlik farkındalığına doğru bir geçişi de ima etmektedir.   
+
+
+
+
 
