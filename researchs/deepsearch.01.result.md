@@ -200,3 +200,11 @@ genişlemesi gerekmektedir; bu da onların benzersiz protokolleri, güvenlik aç
 | Operasyonel Teknoloji (OT)| Evrensel Ağ Geçitleri, Tarihçiler (Historians), Bina Yönetim Sistemleri (BYS), Fiziksel Erişim Kontrol Sistemleri, Kesintisiz Güç Kaynağı (UPS) cihazları| Yanal hareket riski, BT/OT ağları arasındaki tehlikeli bağlantılar, çevrimiçi maruz kalma, varsayılan kimlik bilgileri, kritik altyapı etkisi|
 | Tıbbi Nesnelerin İnterneti (IoMT)| Görüntüleme cihazları (BT, PET-BT, X-ray), Laboratuvar ekipmanları (kan/idrar analizörleri), Sağlık iş istasyonları, İnfüzyon pompası kontrolörleri| Eski/güvenlik açığı olan işletim sistemleri, şifrelenmemiş veri transferi (DICOM), hassas hasta verilerine erişim, fidye yazılımı hedefi, hasta güvenliği riski|
 
+## Teknik/Eğilim 7: Özel Otomasyon için Wireshark Betikleme (Lua/Python)
+
+Wireshark, işlevselliğini genişletmek, tekrarlayan analiz görevlerini otomatikleştirmek ve özel ayrıştırıcılar oluşturmak için başta Lua olmak üzere kapsamlı betiklemeyi destekler. Python,    
+pyshark gibi kütüphaneler aracılığıyla, gelişmiş analiz ve harici araçlarla entegrasyon için PCAP dosyalarıyla da etkileşime girebilir.
+
+- **Özel Ayrıştırıcılar:** Tescilli veya belgelenmemiş protokoller için özel ayrıştırıcılar geliştirmek, özellikle niş veya endüstriyel ortamlarda özel ağ trafiği hakkında derinlemesine görünürlük elde etmek için hayati öneme sahiptir.
+- **Analizi Otomatikleştirmek:**  Betikler, makine öğrenimi modelleri için özellik çıkarma , özel filtreler oluşturma, belirli raporlar üretme veya gözlemlenen paket modellerine göre harici eylemleri tetikleme gibi tekrarlayan görevleri otomatikleştirebilir. Örneğin, bir Python betiği protokol türünü, paket uzunluğunu, kaynak/hedef IP'lerini/portlarını, TCP yeniden iletimlerini/sıfırlama bayraklarını çıkarabilir ve ardından anormallikleri belirlemek için Isolation Forest algoritmasını uygulayabilir.
+- **Tehdit Avcılığı Geliştirmeleri:** Lua betikleri, özel bağlam menüleri ekleyerek veya Tehlike Göstergelerini (IoC'ler) doğrudan ekrana entegre ederek Wireshark'ın kullanıcı arayüzünü geliştirebilir, tehdit avları sırasında anında bağlamsal farkındalık sağlayabilir.   
