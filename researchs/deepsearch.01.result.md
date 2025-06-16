@@ -102,5 +102,17 @@ algoritmaları birleştiren hibrit modeller, bireysel ML algoritmalarına kıyas
 süresini azaltmaktadır. YZ/ML destekli araçlar artık trafik optimizasyonundan anomali tespitine ve düzeltmeye kadar her şeyi yöneterek insan hatasını
 azaltmakta ve ağ güvenilirliğini artırmaktadır.
 
+Geleneksel güvenlik genellikle tespit için önceden tanımlanmış kurallara veya bilinen imzalara dayanmaktaydı. Ancak, sofistike, 
+adaptif kötü amaçlı yazılımların yükselişi  ve bilinmeyen tehditleri tespit etme zorunluluğu , tespit metodolojilerinde temel bir değişimi gerektirmektedir.
+Denetimsiz öğrenme modelleri, "eğitilmemiş yeni tehditleri" tespit etme yetenekleri nedeniyle açıkça vurgulanmaktadır. Bu evrim,
+"bilinen kötü" olanı bulmaktan, bir ağın dinamik "normal" durumunu oluşturmaya ve bundan sapmaları hızla belirlemeye odaklanmayı sağlar. Ayrıca, YZ/ML, 
+kuruluşların potansiyel saldırıları ve güvenlik açıklarını tahmin etmelerine olanak tanıyan tahmine dayalı analitikleri mümkün kılmaktadır. Bu durum, tehdit
+avcılığının belirli kötü amaçlı yazılım imzalarını bulmaktan çok, bir ağın dinamik "normal" durumunu anlamak ve ince sapmaları hızla belirlemekle ilgili hale
+geldiğini göstermektedir. Wireshark'ın rolü, yalnızca "ne olduğunu" göstermekten, ML algoritmalarının "ne olması gerektiğini" öğrenmesi için gerekli ham, 
+ayrıntılı veriyi sağlamaya doğru genişlemektedir. Daha sonra, bir anomali ML sistemi tarafından işaretlendiğinde, Wireshark insan analistlerinin "gerçekte ne olduğunu"
+doğrulamasına ve derinlemesine araştırmasına olanak tanır. Bu, etkili ML modeli eğitimi ve doğrulaması için yalnızca bireysel paket başlıklarından ziyade ağ akışlarının
+ve kapsamlı paket ayrıntılarının  daha derinlemesine anlaşılmasını gerektirir.   
+
+
 
 
