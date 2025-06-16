@@ -85,4 +85,22 @@ bir tehdit avcılığı stratejisinin güçlü, ayrıntılı bir bileşeni olara
 | 9. Sıfır Güven Ağ Görünürlüğü ve Politika Uygulaması| Sıfır Güven ilkelerinin etkinliğini doğrulama ve ihlalleri tespit etme.| Mikro segmentasyon ihlallerini izleme, anormal iç iletişimi belirleme.| İç tehditlere karşı koruma sağlama, yanal hareketi engelleme.|
 | 10. Büyük Ölçekli PCAP Analizi ve Veri Sızdırma Tespiti| Büyük hacimli paket yakalama dosyalarını verimli bir şekilde analiz etme.| Büyük veri kümelerini yönetme, sızdırma yollarını yeniden yapılandırma.| Geniş ölçekli veri ihlallerini ve kötü amaçlı yazılım yayılımlarını tespit etme.|
 
+## Teknik/Eğilim 1: YZ/ML Destekli Ağ Anomali Tespiti
+
+Bu teknik, kötü amaçlı etkinliği gösterebilecek normal ağ davranışından sapmaları belirlemek için özellikle denetimsiz
+ve hibrit yaklaşımlar olmak üzere gelişmiş makine öğrenimi modellerinden yararlanmayı içerir. Geleneksel imza tabanlı yöntemlerin aksine,
+YZ/ML yeni veya "sıfırıncı gün" tehditlerini tespit edebilir. Ağ akışlarındaki anormallikleri tespit etmek için en çok kullanılan seçenek
+Otomatik Kodlayıcılar (Autoencoders) olup, bunu Destek Vektör Makineleri (SVM), ALAD veya SOM takip etmektedir.   
+
+Wireshark, ML modellerini beslemek için ilk veri yakalama (PCAP/PCAPNG) için çok önemlidir. Günlük toplama platformlarıyla sorunsuz
+entegrasyon için verileri JSON veya CSV gibi formatlarda dışa aktarabilir. Analiz sonrası, Wireshark, ML sistemleri tarafından işaretlenen
+anormallikleri doğrulamak ve derinlemesine araştırmak için kullanılır. Örneğin, bir Python betiği, yeniden iletimler, sıfırlama bayrakları,
+yüksek gecikme süresi, beklenmedik protokoller veya hatalı biçimlendirilmiş paketler gibi sorunları sınıflandırarak anomali tespiti için 
+Isolation Forest algoritmasını kullanarak Wireshark PCAP dosyalarını analiz edebilir. Random Forest (anomali tespiti için),
+Destek Vektör Makineleri (SVM) (siber tehdit sınıflandırması için) ve otomatik kodlayıcılar (veri ön işleme ve derin trafik analizi için) gibi
+algoritmaları birleştiren hibrit modeller, bireysel ML algoritmalarına kıyasla saldırı tespit doğruluğunu (%3-7 oranında) artırmakta ve yanıt
+süresini azaltmaktadır. YZ/ML destekli araçlar artık trafik optimizasyonundan anomali tespitine ve düzeltmeye kadar her şeyi yöneterek insan hatasını
+azaltmakta ve ağ güvenilirliğini artırmaktadır.
+
+
 
