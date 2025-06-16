@@ -113,6 +113,19 @@ ayrıntılı veriyi sağlamaya doğru genişlemektedir. Daha sonra, bir anomali 
 doğrulamasına ve derinlemesine araştırmasına olanak tanır. Bu, etkili ML modeli eğitimi ve doğrulaması için yalnızca bireysel paket başlıklarından ziyade ağ akışlarının
 ve kapsamlı paket ayrıntılarının  daha derinlemesine anlaşılmasını gerektirir.   
 
+## Tablo 2: Ağ Anomali Tespiti İçin Temel YZ/ML Algoritmaları (2025)
 
+| Algoritma | Anomali Tespitindeki Birincil İşlev | Temel Fayda/Kullanım Durumu |
+|----------|----------|----------|
+| Otomatik Kodlayıcılar (Autoencoders)| Veri Ön İşleme, Anomali Tanımlama| Yeni tehditleri tespit eder, derin trafik analizi |
+| Isolation Forest| 	
+Anomali Tanımlama| Trafik modellerindeki anormallikleri verimli bir şekilde belirler, çeşitli anomali türlerini sınıflandırır |
+| Hücre 1.1| Hücre 1.2| Hücre 1.3|
+| Hücre 2.1| Hücre 2.2| Hücre 2.3|
+| Hücre 1.1| Hücre 1.2| Hücre 1.3|
+| Hücre 2.1| Hücre 2.2| Hücre 2.3|
+| Hücre 1.1| Hücre 1.2| Hücre 1.3|
+| Hücre 2.1| Hücre 2.2| Hücre 2.3|
+| Hücre 1.1| Hücre 1.2| Hücre 1.3|
 
 
