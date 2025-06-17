@@ -88,9 +88,62 @@ Projeyi kurmak ve çalıştırmak için aşağıdaki komutları terminalinizde v
 ### 1. Proje Deposunu Klonlayın
 
 ```
-git clone https://github.com/KULLANICI_ADINIZ/Project.git
+git clone https://github.com/Ts-Boom/OyuncuAv-Projesi.git
+```
+### 2. Proje Dizinine Girin
+
+```
+cd OyuncuAv-Projesi
 ```
 
+### 3. Python Sanal Ortamı Oluşturun (Önerilir)
+```
+python -m venv venv
+```
 
+### 4. Sanal Ortamı Etkinleştirin
 
+**Windows**
+```
+.\venv\Scripts\activate
+```
 
+**Linux/macOS:**
+
+```
+source venv/bin/activate
+```
+
+## 5. Gerekli Python Kütüphanelerini Yükleyin
+
+```
+pip install -r requirements.txt
+```
+
+# Çalıştırma
+
+Proje kurulumu tamamlandıktan sonra, analizleri başlatmak için aşağıdaki genel adımları izleyebilirsiniz. Projenin spesifik scriptleri ve kullanım detayları için `scripts/` klasöründeki ilgili dosyalara ve onların kendi dökümantasyonlarına başvurunuz.
+
+---
+
+## 1. Wireshark ile Ağ Trafiğini Yakalayın
+
+1. **Wireshark** uygulamasını açın.
+2. `Capture > Options` menüsünden uygun ağ adaptörünüzü seçin (genellikle internete bağlandığınız adaptör).
+3. **Capture Filtreleri** alanına, analiz etmek istediğiniz oyunun trafik filtrelerini girin (bkz. `researchs/wireshark_filters.md`).
+4. Yakalamayı başlatın ve analiz etmek istediğiniz oyunu çalıştırarak ilgili senaryoları (lobi, maç içi vb.) gerçekleştirin.
+5. Yakalama bittikten sonra `File > Save As` ile `.pcapng` veya `.pcap` uzantılı olarak kaydedin.  
+   Örn: `captures/csgo_match_1.pcapng`
+
+---
+
+## 2. Otomatik Analiz Scriptlerini Çalıştırın  
+*(Eğer varsa ve ilgili kilometre taşlarına ulaşıldıysa)*
+
+1. Sanal ortamınızın etkin olduğundan emin olun.
+2. Proje dizininde (örneğin `Project/`) aşağıdaki komutları kullanarak Python analiz scriptlerini çalıştırabilirsiniz:
+
+   ```bash
+   python scripts/analyze_csgo_pcap.py captures/csgo_match_1.pcapng
+   # Veya:
+   python scripts/analyze_valorant_pcap.py captures/valorant_match_2.pcapng
