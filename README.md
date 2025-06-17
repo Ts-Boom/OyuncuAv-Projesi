@@ -143,7 +143,12 @@ Proje kurulumu tamamlandıktan sonra, analizleri başlatmak için aşağıdaki g
 1. Sanal ortamınızın etkin olduğundan emin olun.
 2. Proje dizininde (örneğin `Project/`) aşağıdaki komutları kullanarak Python analiz scriptlerini çalıştırabilirsiniz:
 
-   ```bash
+   ```
    python scripts/analyze_csgo_pcap.py captures/csgo_match_1.pcapng
    # Veya:
    python scripts/analyze_valorant_pcap.py captures/valorant_match_2.pcapng
+   ```
+3. Not: scripts/ klasöründeki dosyaların adları ve kullanım şekilleri projenizin ilerleyişine göre farklılık gösterebilir. Lütfen ilgili script dosyasının içindeki veya yanındaki açıklamalara bakın.
+
+**Bu adımları takip ederek projenizi sorunsuz bir şekilde kurabilir ve analizlere başlayabilirsiniz. Herhangi bir sorunla karşılaşırsanız, lütfen projenin Issues bölümünde bir sorun (issue) oluşturmaktan çekinmeyin.**
+    
