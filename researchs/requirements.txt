@@ -1,0 +1,5 @@
+scapy
+pandas
+matplotlib
+seaborn
+# pyshark # Eğer pyshark kullanmayı düşünüyorsanız bu satırın başındaki # işaretini kaldırın.
