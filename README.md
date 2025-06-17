@@ -87,8 +87,9 @@ Projeyi kurmak ve çalıştırmak için aşağıdaki komutları terminalinizde v
 
 ### 1. Proje Deposunu Klonlayın
 
-```bash
+```
 git clone https://github.com/KULLANICI_ADINIZ/Project.git
+```
 
 
 
