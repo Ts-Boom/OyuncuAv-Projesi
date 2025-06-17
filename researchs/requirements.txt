@@ -2,4 +2,5 @@ scapy
 pandas
 matplotlib
 seaborn
-# pyshark # Eğer pyshark kullanmayı düşünüyorsanız bu satırın başındaki # işaretini kaldırın.
+pyshark # Alternatif olarak veya ek olarak pyshark kullanabilirsiniz.
+# Eğer pyshark kullanacaksanız, sisteminizde TShark (Wireshark ile gelen CLI aracı) yüklü olmalıdır.
