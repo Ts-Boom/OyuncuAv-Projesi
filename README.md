@@ -155,3 +155,11 @@ Proje kurulumu tamamlandıktan sonra, analizleri başlatmak için aşağıdaki g
 ## Lisans
 
 Bu proje, **MIT Lisansı** kapsamında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakınız.
+
+## Contact / *İletişim* 
+
+Project Maintainer: [Taha Sayın] - [stisas34@gmail.com]  
+Found a bug? Open an issue.  
+
+*Proje Sorumlusu: [Taha Sayın] - [stisas34@gmail.com]. Hata bulursanız bir sorun bildirin.*
+
