@@ -152,3 +152,6 @@ Proje kurulumu tamamlandıktan sonra, analizleri başlatmak için aşağıdaki g
 
 **Bu adımları takip ederek projenizi sorunsuz bir şekilde kurabilir ve analizlere başlayabilirsiniz. Herhangi bir sorunla karşılaşırsanız, lütfen projenin Issues bölümünde bir sorun (issue) oluşturmaktan çekinmeyin.**
     
+## Lisans
+
+Bu proje, **MIT Lisansı** kapsamında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakınız.
